@@ -35,6 +35,7 @@ wget https://init.ac/files/argocd -P /usr/local/bin/ && chmod +x /usr/local/bin/
 wget https://init.ac/files/kustomize -P /usr/local/bin/ && chmod +x /usr/local/bin/kustomize
 
 # kubectl-node_shell
+# 一键登录k8s节点
 wget https://init.ac/files/kubectl-node_shell -P /usr/local/bin/ && chmod +x /usr/local/bin/kubectl-node_shell
 ```
 
@@ -45,5 +46,5 @@ wget https://init.ac/files/kubectl-node_shell -P /usr/local/bin/ && chmod +x /us
 
 ## 致谢
 
-感谢伟大的MKdocs以及Github Actions、Cloudflare提供代码托管&自动化部署
+感谢伟大的MKdocs以及Github、Cloudflare提供代码托管&自动化部署
 
