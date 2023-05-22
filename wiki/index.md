@@ -1,14 +1,12 @@
 # 简单概览
 
-## 常用工具
+## 技巧&工具
 
-**记录本站提供的工具**
+!!! note "记录实用技巧"
 
-### 故障排查
+dnsutils
 
-#### dnsutils
-
-支持ping、nslookup等常用网络层面需要的命令
+支持常用网络层面需要的命令
 
 ```shell
 $ cat dnsutils.yaml
@@ -24,8 +22,12 @@ spec:
     command: ["sleep","36000"]
 ```
 
-### 常用工具
+```shell
+kubectl apply -n kube-system -f dnsutils.yaml
+kubectl exec -n kube-system dnsutils
+```
 
+kubectl cli插件
 
 ```shell
 # argocd-cli
@@ -35,7 +37,6 @@ wget https://init.ac/files/argocd -P /usr/local/bin/ && chmod +x /usr/local/bin/
 wget https://init.ac/files/kustomize -P /usr/local/bin/ && chmod +x /usr/local/bin/kustomize
 
 # kubectl-node_shell
-# 一键登录k8s节点
 wget https://init.ac/files/kubectl-node_shell -P /usr/local/bin/ && chmod +x /usr/local/bin/kubectl-node_shell
 ```
 
@@ -46,5 +47,8 @@ wget https://init.ac/files/kubectl-node_shell -P /usr/local/bin/ && chmod +x /us
 
 ## 致谢
 
-感谢伟大的MKdocs以及Github、Cloudflare提供代码托管&自动化部署
+感谢伟大的Mkdocs以及Github、Cloudflare提供代码托管&自动化部署
 
+## 贡献文档
+
+欢迎fork 本仓库 [wiki.k8s.dad](https://github.com/bohai-repo/wiki.k8s.dad) 提交PR上传文档

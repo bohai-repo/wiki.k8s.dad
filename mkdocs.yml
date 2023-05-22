@@ -1,36 +1,85 @@
 site_name: K8S训练营
 docs_dir: wiki
+site_description: k8s训练营
+copyright: Copyright &copy; 2023 - 2099
+site_url: https://wiki.k8s.dad/
+# repo_url: https://github.com/bohai-repo/wiki.k8s.dad.git
+#repo_name: wiki repo
+edit_uri: ""
+
 plugins:
-    - search
+  - search:
+      jieba_dict: user_dict.txt
+
 extra:
-  search:
-    language: 'zh'
+    social:
+        -   icon: fontawesome/brands/github
+            link: https://github.com/bohai-repo/wiki.k8s.dad/
+            name: Github
+        -   icon: fontawesome/solid/paper-plane
+            link: mail://admin@init.ac
+            name: Email
+
+icon:
+    admonition:
+      note: octicons/tag-16
+      abstract: octicons/checklist-16
+      info: octicons/info-16
+      tip: octicons/squirrel-16
+      success: octicons/check-16
+      question: octicons/question-16
+      warning: octicons/alert-16
+      failure: octicons/x-circle-16
+      danger: octicons/zap-16
+      bug: octicons/bug-16
+      example: octicons/beaker-16
+      quote: octicons/quote-16
 
 theme:
-  name: 'material'
-  palette:
-    primary: 'Light Blue'
-    accent: 'Pink'
-  feature:
-    tabs: false
-  #font:
-    #text: 'Ubuntu'
-    #code: 'Ubuntu Mono'
-  language: 'zh'
-
-extra_javascript:
-  - 'js/cnzz-statistics.js'
+    name: material
+    highlightjs: true
+    hljs_style: dark
+    hljs_languages:
+      - c
+      - go
+      - c++
+      - css
+      - json
+      - html
+      - sql
+      - java
+      - python
+      - bash
+    language: en
+    search_index_only: true
+    palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material//weather-sunny
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      primary: teal
+      scheme: slate
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+    features:
+    - navigation.top
+    - search.share
+    - search.suggest
+    - search.highlight
 
 markdown_extensions:
   - admonition
-  - codehilite:
-      guess_lang: false
-      linenums: false
-  - toc:
-      permalink: true
+  - abbr
+  - pymdownx.snippets
+  - def_list
+  - tables
   - footnotes
   - meta
-  - def_list
+  - attr_list
+  - md_in_html
   - pymdownx.caret
   - pymdownx.critic
   - pymdownx.details
@@ -39,6 +88,19 @@ markdown_extensions:
   - pymdownx.mark
   - pymdownx.smartsymbols
   - pymdownx.superfences
-  - pymdownx.tasklist
   - pymdownx.tilde
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - codehilite:
+      guess_lang: false
+      linenums: false
+  - toc:
+      permalink: true
 
+extra_javascript:
+  - '//cdn.staticaly.com/gh/codeslive/cdn@main/js/imageszoom.js'
+
+extra_css:
+   - '//cdn.staticaly.com/gh/codeslive/cdn@main/css/imageszoom.css'
