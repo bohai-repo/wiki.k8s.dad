@@ -1,4 +1,4 @@
-# k8s wiki仓库
+# wiki仓库
 
 ## 文章结构
 
@@ -16,12 +16,12 @@
 ## 本地启动
 
 ```
-git clone https://github.dev/bohai-repo/wiki.k8s.dad.git && cd wiki.k8s.dad
+git clone https://github.com/bohai-repo/wiki.k8s.dad.git && cd wiki.k8s.dad
 pip3 install -r requirements.txt
 mkdocs serve
 ```
 
-访问 `http://127.0.0.1:8080` 打开首页
+访问 `http://127.0.0.1:8000` 打开首页
 
 ## 生成静态文件
 
