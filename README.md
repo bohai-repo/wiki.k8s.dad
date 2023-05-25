@@ -30,3 +30,28 @@ mkdocs build
 ```
 
 生成后,位于 `./site` 目录中
+
+## 容器运行
+
+使用容器快速启动 `wiki.k8s.dad` 进行访问
+
+### 编译
+
+```bash
+git clone https://github.com/bohai-repo/wiki.k8s.dad.git && cd wiki.k8s.dad
+
+docker build . -t registry.cn-hangzhou.aliyuncs.com/bohai_repo/k8s-wiki:latest
+```
+
+### 启动
+
+```bash
+docker run -itd --name=k8s-wiki -p 8000:8000 registry.cn-hangzhou.aliyuncs.com/bohai_repo/k8s-wiki:latest
+```
+
+
+### 访问
+
+```
+http://IP:8000
+```
