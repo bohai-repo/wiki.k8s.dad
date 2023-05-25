@@ -40,6 +40,10 @@ wget https://init.ac/files/kustomize -P /usr/local/bin/ && chmod +x /usr/local/b
 wget https://init.ac/files/kubectl-node_shell -P /usr/local/bin/ && chmod +x /usr/local/bin/kubectl-node_shell
 ```
 
+Docker hub
+
+Docker官方的hub地址已经被国内ban，为了提供类似的服务，本站镜像了hub地址：https://hub.k8s.dad  （局限于域名并非官方，固不能使用登录&注册功能）
+
 ## 站点描述
 
 联系邮箱：admin@init.ac  
