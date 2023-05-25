@@ -46,6 +46,8 @@ docker build . -t registry.cn-hangzhou.aliyuncs.com/bohai_repo/k8s-wiki:latest
 ### 启动
 
 ```bash
+docker pull registry.cn-hangzhou.aliyuncs.com/bohai_repo/k8s-wiki:latest
+docker rm -f k8s-wiki
 docker run -itd --name=k8s-wiki -p 8000:8000 registry.cn-hangzhou.aliyuncs.com/bohai_repo/k8s-wiki:latest
 ```
 
