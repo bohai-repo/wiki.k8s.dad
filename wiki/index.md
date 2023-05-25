@@ -24,7 +24,7 @@ spec:
 
 ```shell
 kubectl apply -n kube-system -f dnsutils.yaml
-kubectl exec -n kube-system dnsutils
+kubectl exec -it -n kube-system dnsutils sh
 ```
 
 kubectl cli插件
