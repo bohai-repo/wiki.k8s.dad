@@ -43,7 +43,7 @@ wget https://init.ac/files/kubectl-node_shell -P /usr/local/bin/ && chmod +x /us
 文件拷贝工具
 
 ```shell
-// 某些情况下或者不想敲复杂的kubectl指令，可以选择使用这里的文件拷贝工具来方便我们复制文件
+某些情况下或者不想敲复杂的kubectl指令，可以选择使用这里的文件拷贝工具来方便我们复制文件
 
 使用：
 curl -4s https://transfer.init.ac/init/file.sh | bash -s 本地文件路径
